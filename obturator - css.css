@@ -120,11 +120,6 @@
     left: 0;
     transform: none;
   }
-  
-	#gol{
-	  height: 0px;
-	  padding: 0px;
-  }
 }
 @media screen and (min-width: 1300px){
 	.topnav{
@@ -141,6 +136,9 @@ img {vertical-align: middle;}
 
 td{
 	width: 50%;
+}
+td img{
+	max-width: 100%;
 }
 
 div.desc {
@@ -183,7 +181,7 @@ a {
 .patrat1
 {
 	width: 100%;
-	height: 100px;
+	 height: 100px;
 	animation : pulse 4s infinite;
 	margin-left: auto;
     margin-right: auto;
@@ -266,50 +264,5 @@ li::marker {
 }
 .paddingsus1
 {
-	padding-top: 10vh;
-	margin-top: 10vh;
-}
-.div_diafragma{
-	
-	position: relative;
-	z-index: 3;
-	background-color: white;
-	width: 99vw;
-}
-.div_diafragma_img{
-	width: 60vw;
-	height: 35vw;
-	max-width: 2700px;
-	max-height: 1500px;
-	margin-left:10%;
-	margin-top: 15vh;
-}
-
-@media screen and (min-height: 1100px) {
-	.div_diafragma_img{
-		margin-top: 150px;
-	}
-	.paddingsus1
-	{
-		padding-top: 150px;
-		margin-top: 150px;
-	}
-}
-
-button{
-	border: none;
-	cursor: pointer;
-	appearance: none;
-	background-color: transparent;
-	 transition: transform .5s ease-in-out;
-	margin-left:2vw;
-	height:6vw;
-	width:6vw;
-
-      }
-button:hover{
-    transform: rotate(180deg);
-}
-td{
-	font-size: 1.5vw;
+	padding-top: 100px;
 }

@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="SFX N&amp;D - Vino la mine_data" version="1.3.0" audacityversion="2.3.3" sel0="0.0000000000" sel1="0.0000000000" vpos="0" h="0.0000000000" zoom="68.9709751257" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="Software" value="Lavf58.45.100"/>
+		<tag name="major_brand" value="dash"/>
+		<tag name="minor_version" value="0"/>
+		<tag name="compatible_brands" value="iso6mp41"/>
+	</tags>
+	<wavetrack name="yt5s.com - N&amp;D - Vino la mine Official music video (128 kbps)" isSelected="1" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="454613">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808808.au" len="233259" min="-1.13324" max="1.056977" rms="0.201497"/>
+				</waveblock>
+				<waveblock start="233259">
+					<simpleblockfile filename="e0808a83.au" len="221354" min="-1.107818" max="1.126719" rms="0.187882"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="yt5s.com - N&amp;D - Vino la mine Official music video (128 kbps)" isSelected="1" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="454613">
+				<waveblock start="0">
+					<simpleblockfile filename="e080807a.au" len="233259" min="-1.251325" max="1.135579" rms="0.220835"/>
+				</waveblock>
+				<waveblock start="233259">
+					<simpleblockfile filename="e0808002.au" len="221354" min="-1.265471" max="1.303963" rms="0.210886"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

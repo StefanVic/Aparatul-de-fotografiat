@@ -1,0 +1,109 @@
+
+<!--setTimeout(function(){move()},10000)
+
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+:root {
+  --zoom: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+h1{
+	font-size: 60px;
+	text-align: left;
+	margin-bottom: 0px;
+}
+
+.column {
+  float: left;
+  padding: 5px;
+  height: 50vw;
+  overflow: hidden;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;  height: 25%;
+  display: table;
+}
+
+button{
+    background-image: url('http://clipart-library.com/img/1774548.png') ;
+    background-repeat:no-repeat;
+    background-size: contain;
+    color: white;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    font-size: 150%;
+    
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+.zoom {
+  transition: transform .2s;
+  transform: scale(var(--zoom)); 
+}
+.blur{
+	filter: blur(5px);
+}
+.blur:hover{
+transition: 0.2s -webkit-filter linear;
+
+filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0'); filter: blur(0px); } 
+
+</style>
+</head>
+<body>
+
+<h1>Cum arată o poză cu diferite distanțe focale?</h1>
+<h2>Apasă pe cele 3 butoane ca să vezi cum arată o poză făcută cu 14mm, 2?mm și 42mm.</h2>
+
+<div class="row">
+  <div class="column" style="width: 65%;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg/1024px-Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg" class="zoom blur" id="imaginea" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <div class="row" style=" height: 33%;">
+      <button onclick="functiaZFull()" style="font-size: 300%">42</button>
+    </div>
+    <div class="row" style=" height: 33%;">
+      <button onclick="functiaZMed()" style="font-size: 300%;"> 2?</button>
+    </div>
+    <div class="row" style=" height: 33%;">
+      <button onclick="functiaZ0()" style="font-size: 300%;">14 </button>
+    </div>
+  </div>
+</div>
+
+<script>
+	var r = document.querySelector(':root');
+	var imagineaAdresa=document.getElementById("imaginea");
+		
+	function functiaZFull(){
+         r.style.setProperty('--zoom', '3');
+         
+    }
+    function functiaZMed(){
+        r.style.setProperty('--zoom', '1.5');
+    }
+    function functiaZ0(){
+        r.style.setProperty('--zoom', '1');
+    }
+
+</script>
+
+</body>
+</html>

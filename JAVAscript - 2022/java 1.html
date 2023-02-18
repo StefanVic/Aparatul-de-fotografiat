@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<head> 
+	<title>Shamroa buna</title>
+	<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/1107px-How_to_use_icon.svg.png">
+	
+</head>
+
+<style>
+	p{
+		font-size:300%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+	}
+	button{
+		font-size:200%;
+	}
+	
+	
+</style>
+<style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 500px;
+  height: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -250px;
+  font-size: 30px;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+.popup .green {
+  transform: translateX(50%);
+  color:red;
+  visibility: visible;
+}
+.arrowhidden{
+	visibility: hidden;
+}
+.show{
+	visibility: visible;
+    animation: fadeIn 1s;
+}
+
+
+/* Add animation (fade in the popup) */
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+/*BLINK*/
+.blink {
+	animation: blink-animation 0.3s steps(5, start) infinite;
+	-webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+	to {
+	  color: red;
+	}
+}
+	@-webkit-keyframes blink-animation {
+	to {
+		color: red;
+	}
+}
+
+/*FUNDAL*/
+.fundal{
+		background-image: url('http://clipart-library.com/images/dT45rLpyc.png');
+		background-repeat: no-repeat;
+		background-position: 50% 10%;
+	}
+</style>
+
+<body id="bodyid" class="" style="text-align:center">	
+
+<h1 style="padding-bottom:2%"> Această pagină este magică datorită nostalgiei <em>Javascript</em>iene resimțite față de numărul afișat în mijlocul ecranului.</h1>
+<h2> Dar, pentru moment, hai să vedem ce oră este:</h2>
+
+<div id="baza" style="text-align:center">
+	<button type="button" onclick="arata_data(); myFunction();"> Eu îți voi arăta data și ora🤯...</button>
+	<p></p>
+	<div class="popup" onclick="myFunction()">
+  <span class="popup popuptext" id="myPopup">Ai aflat ora dar ți s-a făcut dor de acel număr superb💔.<p></p>Hai să chemăm numărul înapoi😍!
+  <p style="font-size: 14px">(apasă pe acest mesaj și, după, urmează săgeata din partea de jos a ecranului)</p>
+  </span>
+</div>
+	<script>
+	function arata_data(){
+		n =  new Date();
+		y = n.getFullYear();
+		m = n.getMonth() + 1;
+		d = n.getDate();
+		h = n.getHours();
+		mins = n.getMinutes();
+		document.getElementById("textu").innerHTML = m + "/" + d + "/" + y + " ora " + h+":"+mins;
+	}
+	</script>
+
+	<p id="textu"></p>
+
+	<script>
+	var constanta_frumoasa=406+95978*5;
+	document.getElementById("textu").innerHTML=constanta_frumoasa;
+	</script>
+</div>
+
+<div id="butonul magic" style="text-align:center">	
+	<button onclick="melodie()">"Haide vino inapoi...!"</button>
+	<script>
+	<!--AICI VINE INAPOI-->
+	function melodie() {
+		document.getElementById("textu").innerHTML = constanta_frumoasa;
+		document.getElementById('sound1').play();
+		$("#textu").fadeToggle(0);
+		$("#textu").fadeToggle(1500);		
+		c=0;	
+		<!--document.getElementById("textu2").innerHTML =c;-->
+		
+		
+		var popuparrow=document.getElementById("arrowid");
+		popuparrow.classList.toggle("show");
+		var popupbackround=document.getElementById("bodyid");
+		popupbackround.classList.toggle("fundal");
+
+	}</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<audio id="sound1" src="SFX N&D - Vino la mine.mp3" preload="auto"></audio>
+</div>
+
+
+
+
+<p id="arrowid" class="arrowhidden" style="font-size: 800%; margin-top:0%;"><b>↑</b></p>
+
+<script>
+var c=0;
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  var popuparrow=document.getElementById("arrowid");
+  popup.classList.toggle("show");
+  c++;
+  if(c==2)   {
+  	popuparrow.classList.toggle("show");
+	popuparrow.classList.toggle("blink");
+    }
+  if(c==3)   {
+    popup.classList.toggle("show");
+    c=0;
+    }
+	<!--document.getElementById("textu2").innerHTML =c;-->
+}
+
+</script>
+
+<p id="textu2"></p>
+
+<a href="../main - new.html">Înapoi la pag principală</button>
+
+</body>

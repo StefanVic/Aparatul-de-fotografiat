@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
-<div class="topnav" id="sus">
+<div id="sus"></div>
+<div class="topnav">
 
   <!-- Centered link -->
   <div class="topnav-centered">
@@ -16,69 +16,78 @@
   </div>
   
   <!-- Left-aligned links (default) -->
-  <a href="./index.html">Pagina principala</a>
+  <a href="./main - new.html">Pag. principală</a>
   <a href="./obiectiv.html">Obiectivul</a>
   
   <!-- Right-aligned links -->
   <div class="topnav-right">
-    <a href="./senzor.html">Senzor</a>
-    <a href="#about">About</a>
+    <a href="./obturator.html">Obturator</a>
+    <a style="margin-left:20vw;" id="gol"></a>
   </div>
 </div>
-<h1 class="fmare" >Diafragma</h1>
-   <p class="margini1">Elementul ce controlează <b>cantitatea de lumină</b> ce ajunge pe <em>sensor.</em></p>
-   <p class="margini1">Se măsoară cu ajutorul numărului <b>f/</b>.</p>
-   <a href="https://www.nikon.ro/ro_RO/product/nikkor-lenses/auto-focus-lenses/dx/zoom/af-s-dx-nikkor-18-105mm-f-3-5-5-6g-ed-vr" target="_blank">
-		   <img class="flr" src="poze/nikon-af-s-dx-nikkor-18-105-mm-f-2f3-5-5-6g-ed-vr-zoom-lens-500x500.png" width=45%>
+	<h1 class="fmare" >Diafragma</h1>
+	<p class="margini1">Elementul ce controlează <b>cantitatea de lumină</b> ce ajunge pe <em>sensor.</em></p>
+	<p class="margini1">Se măsoară cu ajutorul numărului <b>f/</b>.</p>
+	<a href="https://www.nikon.ro/ro_RO/product/nikkor-lenses/auto-focus-lenses/dx/zoom/af-s-dx-nikkor-18-105mm-f-3-5-5-6g-ed-vr" target="_blank">
+		   <img class="flr" src="nikon-af-s-dx-nikkor-18-105-mm-f-2f3-5-5-6g-ed-vr-zoom-lens-500x500.png" width=45%>
 		</a>
-   <ul class="marginea1">
-     <li><p class="noindent black">f/ = d : f2</p>
-	 <li><p class="noindent black">d=diametul obiectivului</p>
-	 <li><p class="noindent black">f2=distanța focală</p>
+	<ul class="marginea1">
+	 <li><p class="nomargin black">f/ = d : f2</p>
+	 <li><p class="nomargin black">d=diametul obiectivului</p>
+	 <li><p class="nomargin black">f2=distanța focală</p>
 	</ul>
 	<div>
 	    
 		<p class="margini1" >Ex: obiectivul din imagine are<br> un <b>diametru (d)</b> de 67 mm și<br> o <b>distanță focală</b> minimă de 18mm.
 		<p class="margini1">Folosind formula rezultă o <em>diafragma minimă</em> de f/=~3.6 ... destul de aproape de 3.5 (cât scrie pe site-ul Nikon)</p><br><br>
 	</div>
-	<div>
-		<div class="gallery">
+	<table style="width:100%; margin-bottom: 10vh;">
+		<tr>
+		<td>
 		  <a target="_blank" href="Diafragma Nikon 15-45mm.jpg">
-			<img src="poze/Diafragma Nikon 15-45mm.jpg" alt="Diafragma Nikon 15-45mm" width="50%">
+			<img src="Diafragma Nikon 15-45mm.jpg" style="max-width: 100%;">
 		  </a>
 		  <div class="desc">Diafragma obiectivului Nikon 15-45mm</div>
-		</div>
-
-		<div class="gallery">
+		</td>
+		<td>
 		  <a target="_blank" href="Diafragma nikon 150-300mm.jpg">
-			<img src="poze/Diafragma nikon 150-300mm.jpg" alt="Diafragma nikon 150-300mm" width="50%" >
+			<img src="Diafragma nikon 150-300mm.jpg" style="max-width: 100%;">
 		  </a>
 		  <div class="desc">Diafragma obiectivului Nikon 150-300mm</div>
-		</div>
+		 </td>
+		</tr>
+	</table>
+	<br></br>
+	<div class="div_diafragma">
+		<img class="div_diafragma_img" id="imaginea" width=100% src="https://media.product.which.co.uk/prod/images/original/gm-7f81909f-0023-4ccf-9b0e-2254549b5639-cornish-beachv2.jpeg"> </img>
+		
+		
+		<table style="margin-left:10%; width: 60vw; z-index: -1; position:relative;"><tr>
+			<td><button onclick="diafragma_deschisa()"><a href="#imaginea"><img width=100% src="./iconite/diafragma_deschisa.jpg"></img></a></button></td>
+			<td><button onclick="diafragma_medie()"><a href="#imaginea"><img width=100% src="./iconite/diafragma_medie.jpg"></img></a></button></td>
+			<td><button onclick="diafragma_inchisa()"><a href="#imaginea"><img width=100% src="./iconite/diafragma_inchisa.jpg"></img></a></button></td>
+		</tr><tr style="z-index: 0; position:relative;">
+			<td style="padding-left: 2vw;"> f=/3.5 </td>
+			<td style="padding-left: 2.2vw;"> f=/11 </td>
+			<td style="padding-left: 2.4vw;"> f=/22 </td>
+		</tr>
+		</table>
 	</div>
-<h1 class="center fmare">Obturatorul</h1>
-   <p class="margini1">Este o "perdea" ce limitează <b>durata</b> în care lumina ajunge pe <em>senzor</em></p>
-   <p class="margini1">Cu cât viteza obturatorului este mai scazută, cu atât fotografia va ieși mai <b>luminoasă</b> dar aceasta poate fi mișcată</p>  	<br>
-	<h2 class="px35"> Exista 2 tipuri de obturator:</h2>
-		 <ul class="marginea0">
-			<li><a href="#elec"class="noindent black px30">Electronic</a></li>
-			<li><a href="#mec" class="noindent black px30">Mecanic</a></li>
-		 </ul>
-	 <p id="elec" class="px35"><b>Electronic</b></p>
-	 <p class="margini1 height04">Prezent în aparatele de fotografiat <b>moderne</b></p>
-	 <p class="margini1 height04">Scade timpul de expunere până la 1/20.000</p>
-	 <p class="margini1 height04">Nu produce zgomot la declanșare</p>
-		  <img src="poze/canon-fullcmos sensor.jpg" width=50%  class="center">
-	 <p id="mec" class="px35"><b>Mecanic</b></p>
-	 <p class="margini1 height04">Reduce distorsiunea <b>"Obturator oscilant"</b></p>
-	 <p class="margini1 height04">Variantele mai vechi foloseau un <b>motor electric :</b></p>
-		  <img src="poze/shutter motor.jpg" width=50% class="center">
-	 <p class="margini1 height04">Cele moderne folosesc <b>electromagneți :</b></p>
-		  <img src="poze/camera-shutter-and-different-types-of-shutter.jpg" width=60% class="center">
-  
-  <div class="patrat1"></div>
-  
+	<script>
+		adresa_imag=document.getElementById("imaginea");
+		function  diafragma_deschisa(){
+			adresa_imag.src="https://media.product.which.co.uk/prod/images/original/gm-7f81909f-0023-4ccf-9b0e-2254549b5639-cornish-beachv2.jpeg";
+		}
+		function  diafragma_medie(){
+			adresa_imag.src="https://www.florida-backroads-travel.com/images/SeasideAerial.jpg";
+		}
+		function  diafragma_inchisa(){
+			adresa_imag.src="https://www.regatta.com/blog/wp-content/uploads/2020/05/Blackpool-now.jpg";
+		}
+	</script>
+	
   <div align="center" class="paddingsus1">
-	<img src="poze/thick_small_chevron_arrow_right-512.png" width="10%"/><span id="txt"><a class="indicatiijos1" color="	#000000" href="#sus">Sus</a></span><img src="poze/thick_small_chevron_arrow_right-512.png" width="10%"/><br>
-	<a class="indicatiijos3 " href="./senzor.html">Senzorul</a>
-</div>
+	<img src="./iconite/sageata sus.png" width="10%"/><span id="txt"><a class="indicatiijos1" color="	#000000" href="#sus">Sus</a></span><img src="./iconite/sageata sus.png" width="10%"/><br>
+	<img src="./iconite/sageata dreapta.png" width="10%"/><a class="indicatiijos3 " href="./obturator.html">Obturatorul</a><img src="./iconite/sageata dreapta.png" width="10%"/>
+	<p style="text-indent: 0vw;">shutter icon - Image by pch.vector on Freepik</p>
+  </div>

@@ -1,0 +1,105 @@
+
+<!--setTimeout(function(){move()},10000)
+
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Aparatul de fotografiat</title>
+  <link href="main - style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body onload="check_intro()">
+	<script>
+		function check_intro(){
+  
+			const hasRunIntro = localStorage.getItem("hasRunIntro");
+			if (hasRunIntro !== "1"){
+				var popup = document.getElementById("myPopup");
+				popup.classList.toggle("show");
+			}}
+		function apas_popup(){
+				var popup = document.getElementById("myPopup");
+				popup.classList.toggle("show");
+				localStorage.setItem("hasRunIntro", "1");
+			}
+	</script>
+	
+	<div id="sus">
+	  <div class="topnav">
+
+	  <!-- Centered link -->
+	  <div class="topnav-centered">
+		<a href="./main - new.html" class="active">Pagina principală</a>
+	  </div>
+	  
+	  <!-- Left-aligned links (default) -->
+	  <a href="./JAVAscript - 2022/java 1.html">javascript</a>
+	  <a href="./contact.html">Contact</a>
+	  
+	  <!-- Right-aligned links -->
+	  <div class="topnav-right">
+		<a href="obiectiv.html">Obiectivul</a>
+		<a href="diafragma.html">Diafragma</a>
+	  </div>
+	</div>
+	
+<h1 class="fmare margin_bottom">Aparatul de fotografiat</h1>
+
+	<div class="popup" onclick="apas_popup()">
+	  <span class="popup popuptext" id="myPopup">Bine ați venit pe siteul meu!<p></p>Acum vom descoperi tainele aparatului de fotografiat!</p>
+	  </span>
+	</div>
+	
+
+  <div id="introducere">
+  	<a href="https://imaging.nikon.com/lineup/mirrorless/z_7_2/" target="_blank"><img class="" src="aparat-main.png" width=1200px style="float: right; max-width:50%;" ></a>
+    <h2 class="" >Ce este un aparat de fotografiat?</h2>
+	<p>Ca și definiție de bază, acesta este un instrument menit pentru a capta o <em>imagine</em>.</p>
+    <br></br>
+	<br></br>
+	<h2>Acesta este compus din:</h2> 
+    <ul>
+      <li>„corpul” aparatului</li>
+	  <p class="margin-left">-adăpostește părțile fragile (diafragma, senzorul)</p>
+      <li>obiectivul</li>
+	  <p class="margin-left">-cuprinde lentile pentru focalizare</p>
+      <li>părțile suplimentare</li>
+	  <p class="margin-left">-bliț, baterie externă, buton declanșare extern</p>
+    </ul>
+  </div>
+  <br></br>
+  <br></br>
+    <h2>Fotografie sau Videografie?</h2>
+	<p>Fotografia și videografia sunt două ocupații (/activități artistice) conexe, 
+care au un lucru foarte important în comun: <em>captarea imaginilor</em>.</p>
+    <p>Aparatele de fotografiat pot fi folosite și pentru videografie, deși oferă o 
+	calitate puțin redusă față de cele construite special pentru acest scop</p>
+	<br></br>
+	<br></br>
+  <div id="galerie">
+    <h2>Galerie mică</h2>
+    <p>Aceste sunt niște „opere” ce aparțin fotografiei, respectiv videografiei:</p>
+	
+	<table>
+	  <tr style="height:40px">
+		<th ><img src="shaorrrma.jpg" width=100% /></th>
+		<th><img src="./pozele mele/Oaia nebuna.jpg" width=100% /></th>
+		<th><video class="b" src="./pozele mele/Floarea rasare.mp4" width=100% controls>Video not supported</video></th>
+	  </tr>
+	</table>
+	
+	
+	
+	<div align="center" class="paddingsus1">
+		<img src="./iconite/sageata sus.png" width="10%"/><span id="txt"><a class="indicatiijos1" color="	#000000" href="#sus">Sus</a></span><img src="./iconite/sageata sus.png" width="10%"/><br>
+		<img src="./iconite/sageata dreapta.png" width="10%"/><a class="indicatiijos1 " href="./obiectiv.html">Obiectivul</a><img src="./iconite/sageata dreapta.png" width="10%"/>
+	</div>
+	
+	<a href="https://www.dpreview.com/" target=_blank><p class="paddingsus1 indicatiijos2">Dacă doriți să vedeți și alte informații despre acest instrument, apăsați aici.</p></a>
+  </div>
+</body>
+
+</html>
