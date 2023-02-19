@@ -275,20 +275,17 @@ li::marker {
 	z-index: 3;
 	background-color: white;
 	width: 99vw;
+	margin-top: 15vh;
 }
 .div_diafragma_img{
-	width: 60vw;
-	height: 35vw;
+	width: 68vw;
+	height: 50vw;
 	max-width: 2700px;
 	max-height: 1500px;
-	margin-left:10%;
-	margin-top: 15vh;
+	margin-left:5%;
 }
 
 @media screen and (min-height: 1100px) {
-	.div_diafragma_img{
-		margin-top: 150px;
-	}
 	.paddingsus1
 	{
 		padding-top: 150px;

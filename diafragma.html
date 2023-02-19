@@ -58,31 +58,47 @@
 		</tr>
 	</table>
 	<br></br>
-	<div class="div_diafragma">
-		<img class="div_diafragma_img" id="imaginea" width=100% src="https://media.product.which.co.uk/prod/images/original/gm-7f81909f-0023-4ccf-9b0e-2254549b5639-cornish-beachv2.jpeg"> </img>
-		
-		
-		<table style="margin-left:10%; width: 60vw; z-index: -1; position:relative;"><tr>
-			<td><button onclick="diafragma_deschisa()"><a href="#imaginea"><img width=100% src="./iconite/diafragma_deschisa.jpg"></img></a></button></td>
-			<td><button onclick="diafragma_medie()"><a href="#imaginea"><img width=100% src="./iconite/diafragma_medie.jpg"></img></a></button></td>
-			<td><button onclick="diafragma_inchisa()"><a href="#imaginea"><img width=100% src="./iconite/diafragma_inchisa.jpg"></img></a></button></td>
-		</tr><tr style="z-index: 0; position:relative;">
-			<td style="padding-left: 2vw;"> f=/3.5 </td>
-			<td style="padding-left: 2.2vw;"> f=/11 </td>
-			<td style="padding-left: 2.4vw;"> f=/22 </td>
-		</tr>
-		</table>
-	</div>
+	<table class="div_diafragma">
+	<tr>
+		<p>Diafragma are o influență majoră asupra luminozității și clarității imaginii.</p>
+		<p>Odată cu mărirea suprafeței diafragmei (scăderea numărului f/):</p>
+		<ul class="marginea1">
+			<li><p class="nomargin black">se mărește claritatea punctelor aflate în focar, dar...</p>
+			<li><p class="nomargin black">scade claritatea fundalului</p>
+			<li><p class="nomargin black">crește luminozitatea imaginii</p>
+		</ul>
+		<p>Primele două efecte pot fi observate în pozele de mai jos:</p>
+		<p class="black">Apăsați butoanele circulare pentru a schimba diafragma</p>
+	</tr>
+	<tr>
+		<td ><img class="div_diafragma_img" id="imaginea" width=100% src="./pozele mele/ghiocel_2.8.jpg"> </img></td>
+		<td>
+			<table style="margin-left:10%; height: 100%; align: top;">
+			<tr><td><button onclick="diafragma_deschisa()"><a href="#imaginea"><img width=100% src="./iconite/diafragma_deschisa.jpg"></img></a></button></td></tr>
+			<tr style="z-index: 1; position:relative;"><td style="padding-left: 2.2vw;"> f=/3.5 </td></tr>
+			<tr><td style="padding-top: 7vh"><button onclick="diafragma_medie()"><a href="#imaginea"><img width=100% src="./iconite/diafragma_medie.jpg"></img></a></button></td></tr>
+			<tr style="z-index: 1; position:relative;"><td style="padding-left: 2.2vw;"> f=/11 </td></tr>
+			<tr><td style="padding-top: 7vh"><button onclick="diafragma_inchisa()"><a href="#imaginea"><img width=100% src="./iconite/diafragma_inchisa.jpg"></img></a></button></td></tr>
+			<tr style="z-index: 1; position:relative;"><td style="padding-left: 2.4vw;"> f=/22 </td></tr>
+			</table>
+		</td>
+	</tr>		
+	</table>
+	<p>Influența asupra luminozității NU se observă datorită modificării ISO. Prima poză are f/2.8 ISO 200, a doua f/11 ISO 1250, iar ultima f/22 ISO 5000.</p>
+	<p>Nu se merită aproape niciodată
+	creșterea diaframei mai sus de f/11 deoarece trecerea de acest prag nu aduce prea multe beficii, dar necesită creșterea ISO și, deci, pierderea calității imaginii.</p>
+	
 	<script>
 		adresa_imag=document.getElementById("imaginea");
 		function  diafragma_deschisa(){
-			adresa_imag.src="https://media.product.which.co.uk/prod/images/original/gm-7f81909f-0023-4ccf-9b0e-2254549b5639-cornish-beachv2.jpeg";
+			adresa_imag.src="./pozele mele/ghiocel_2.8.jpg";
 		}
 		function  diafragma_medie(){
-			adresa_imag.src="https://www.florida-backroads-travel.com/images/SeasideAerial.jpg";
+			adresa_imag.src="./pozele mele/ghiocel_11.jpg";
 		}
 		function  diafragma_inchisa(){
-			adresa_imag.src="https://www.regatta.com/blog/wp-content/uploads/2020/05/Blackpool-now.jpg";
+			adresa_imag.src="./pozele mele/ghiocel_22.jpg";
+			srcset: "./pozele mele/ghiocel_2.8.jpg";	
 		}
 	</script>
 	
