@@ -274,7 +274,6 @@ li::marker {
 	position: relative;
 	z-index: 3;
 	background-color: white;
-	width: 99vw;
 	margin-top: 15vh;
 }
 .div_diafragma_img{
